@@ -59,7 +59,7 @@ app.put("/update", (req, res) => {
     }
   );
 });
-
+//
 app.delete("/delete/:name", (req, res) => {
   const id = req.params.name;
   db.query("DELETE FROM employees WHERE name = ?", id, (err, result) => {
